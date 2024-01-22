@@ -73,7 +73,7 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="Join Channel 1", url="https://t.me/+WDiCe8D70iQwYjgx"),             
+                InlineKeyboardButton(text="Join Channel 1", url="https://t.me/+jT0q41m7a241NGM1"),             
             ],
             [
                 InlineKeyboardButton(text="Join Channel 2", url=client.invitelink),             
