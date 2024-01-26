@@ -13,7 +13,7 @@ from config import (
     CHANNEL_ID,
     FORCE_SUB_CHANNEL,
     FORCE_SUB_CHANNEL2,
-    FORCE_SUB_GROUP,
+    FORCE_SUB_CHANNEL3,
     LOGGER,
     OWNER,
     TG_BOT_TOKEN,
@@ -76,11 +76,11 @@ class Bot(Client):
         if FORCE_SUB_CHANNEL2:
             try:
                 info = await self.get_chat(FORCE_SUB_CHANNEL2)
-                link = info.invite_link
+                link = info.invite_link2
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_CHANNEL2)
-                    link = info.invite_link
-                self.invitelink = link
+                    link = info.invite_link2
+                self.invitelink2 = link
                 self.LOGGER(__name__).info(
                     f"FORCE_SUB_CHANNEL2 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
                 )
@@ -97,14 +97,14 @@ class Bot(Client):
                 )
                 sys.exit()
                 
-        if FORCE_SUB_GROUP:
+        if FORCE_SUB_CHANNEL3:
             try:
-                info = await self.get_chat(FORCE_SUB_GROUP)
-                link = info.invite_link
+                info = await self.get_chat(FORCE_SUB_CHANNEL3)
+                link = info.invite_link3
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_GROUP)
-                    link = info.invite_link
-                self.invitelink2 = link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL3)
+                    link = info.invite_link3
+                self.invitelink3 = link
                 self.LOGGER(__name__).info(
                     f"FORCE_SUB_GROUP detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
                 )
