@@ -96,6 +96,9 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and FORCE_SUB_CHANNEL2 and FORCE_SUB_CHANNEL3 :
         buttons = [
             [
+                InlineKeyboardButton(text="Join Channel", url="https://t.me/borbay"),
+            ],            
+            [
                 InlineKeyboardButton(text="Join Channel", url=client.invitelink),
             ],
             [
