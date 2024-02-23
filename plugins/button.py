@@ -17,7 +17,7 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL3 and not FORCE_SUB_CHANNEL2 and FORCE_SUB_CHANNEL:
         buttons = [
             [
-                InlineKeyboardButton(text="Channel", url=client.invitelink1),
+                InlineKeyboardButton(text="Channel", url=client.invitelink),
             ],
             [
                 InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
