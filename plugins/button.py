@@ -59,6 +59,9 @@ def fsub_button(client, message):
             [
                 InlineKeyboardButton(text="Join Channel", url=client.invitelink),
             ],
+            [
+                InlineKeyboardButton(text="Join Channel", url="https://t.me/borbay"),
+            ],            
         ]
         try:
             buttons.append(
