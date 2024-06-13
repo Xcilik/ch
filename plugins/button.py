@@ -17,7 +17,7 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL3 and not FORCE_SUB_CHANNEL2 and FORCE_SUB_CHANNEL:
         buttons = [
             [
-                InlineKeyboardButton(text="Channel", url="https://t.me/gbutnaswh"),
+                InlineKeyboardButton(text="Channel", url="https://t.me/+tkyOQ3Sv7mplMjc1"),
             ],            
             [
                 InlineKeyboardButton(text="Channel", url=client.invitelink),
@@ -60,7 +60,7 @@ def fsub_button(client, message):
     if not FORCE_SUB_CHANNEL3 and not FORCE_SUB_CHANNEL2 and FORCE_SUB_CHANNEL:
         buttons = [
             [
-                InlineKeyboardButton(text="Join Channel", url="https://t.me/gbutnaswh"),
+                InlineKeyboardButton(text="Join Channel", url="https://t.me/+tkyOQ3Sv7mplMjc1"),
             ],                        
             [
                 InlineKeyboardButton(text="Join Channel", url=client.invitelink),
